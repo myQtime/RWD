@@ -1,0 +1,190 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* start here*/
+
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.mb-1{
+    margin-bottom: 8px;
+}
+
+.mb-4{
+    margin-bottom: 32px;
+}
+
+.blackBorder{
+    border: solid 1px #000;
+    padding: 15px;
+}
+
+.wrap{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+.logo{
+    display: block;
+    width: 250px;
+    height: 250px;
+    background: url(https://fakeimg.pl/250x250/?text=HexSchool);
+    border: #000 1px solid;
+    border-radius: 5px;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+    
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.menu a{
+    display: block;
+    padding: 10px 20px;
+    background: rgb(101, 203, 235);
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    border-left: #ffffff 1px solid;
+}
+
+.menu a:hover{
+    background-color: #f18621;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main{
+    width: 70%;
+}
+
+.main h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.main h4{
+    font-size: 20px;
+}
+
+.main p{
+    font-size: 16px;
+    line-height: 1.5;
+    text-indent: 32px;
+}
+
+.sidebox{
+    width: 25%;
+}
+
+.footer{
+    text-align: center;
+    margin: 10px auto;
+}
+
+@media (max-width:768px){
+    .header{
+        display: block;
+        margin: 16px 0px;
+    }
+
+    .logo{
+    width: 150px;
+    height: 150px;
+    background: url(https://fakeimg.pl/150x150/?text=Hex);
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    }
+
+    .menu{
+    justify-content: center;
+    margin: 16px;
+    }
+    .menu li{
+        width: 34%;    
+    }
+    
+    .menu a{
+        border-bottom: 1px solid #ffffff;
+    }
+    .content {
+        display: block;
+    }
+
+    .main, .sidebox{
+        width: 100%;
+        margin: 8px auto;
+    }
+}
